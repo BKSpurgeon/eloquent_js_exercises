@@ -9,5 +9,4 @@ const every = function(array, predicate){
 	return true;
 }
 
-
 module.exports = every
