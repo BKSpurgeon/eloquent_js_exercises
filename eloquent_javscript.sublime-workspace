@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"array",
+				"arrayList"
+			],
+			[
 				"for",
 				"for\tfor (…) {…}"
 			],
@@ -147,6 +151,30 @@
 	},
 	"buffers":
 	[
+<<<<<<< HEAD
+=======
+		{
+			"file": "higher_order_functions/flatten.test.js",
+			"settings":
+			{
+				"buffer_size": 146,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "const flatten = function(arrayList){\t\n\n\tfor (var i = 0; i < Things.length; i++) {\n\t\tThings[i]\n\t}\n\n\t\n\treturn reduce(arrayList,  (a, b) => a.concat(b));\t\n}\n\n\nmodule.exports = flatten",
+			"file": "higher_order_functions/flatten.js",
+			"file_size": 118,
+			"file_write_time": 132454720327360970,
+			"settings":
+			{
+				"buffer_size": 180,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+>>>>>>> origin/master
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -196,6 +224,7 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< HEAD
 		"/home/koshy/Documents/js/eloquent_javascript",
 		"/home/koshy/Documents/js/eloquent_javascript/data_structures"
 	],
@@ -207,6 +236,17 @@
 		"/home/koshy/Documents/projects/personal_blog/_posts/2020-08-06-strange-experiences.md",
 		"/home/koshy/Documents/projects/personal-blog/_config.yml",
 		"/home/koshy/Documents/js/eloquent_javascript/readme.md",
+=======
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises",
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/functions",
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/higher_order_functions"
+	],
+	"file_history":
+	[
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/readme.md",
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/data_structures/range.js",
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/data_structures/range.test.js",
+>>>>>>> origin/master
 		"/home/koshy/Documents/js/eloquent_javascript/data_structures/range.test.js",
 		"/home/koshy/Documents/js/eloquent_javascript/data_structures/range.js",
 		"/home/koshy/Documents/js/eloquent_javascript/data_structures/package.json",
@@ -233,7 +273,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -344,6 +384,71 @@
 		{
 			"sheets":
 			[
+<<<<<<< HEAD
+=======
+				{
+					"buffer": 0,
+					"file": "higher_order_functions/flatten.test.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"keep_blank_lines": null,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": null,
+							"translate_tabs_to_spaces": null
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "higher_order_functions/flatten.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"keep_blank_lines": null,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": null,
+							"translate_tabs_to_spaces": null
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+>>>>>>> origin/master
 			]
 		}
 	],
@@ -413,9 +518,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "pro",
 		"selected_items":
 		[
+			[
+				"pro",
+				"~/Documents/www/BensRails/pro-connect-documentation/pro-connct.sublime-project"
+			],
+			[
+				"",
+				"~/Documents/coding/javascript/deletable_exercises/deletable_js_exercises.sublime-project"
+			]
 		],
 		"width": 380.0
 	},

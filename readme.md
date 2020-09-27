@@ -10,7 +10,11 @@ Nevertheless, this may be of benefit to some, and is of immense benefit to mysel
 
 I like writing code with test. I've used Jest to help out. First you will need to download and install Yarn. And after that, you will need to install jest - again, this can be done using yarn. You can then write the test and run it with a simple `yarn test` and you're off to the races!
 
+### Tests
+
+I prefer to learn things and code via tests. I've used [Jest](https://jestjs.io/en/) for that purpose. You'll need to set up yarn or npm to install jest, and then you can run the tests yourself, if you wish.
+
 ## Current Bookmark
 
-https://eloquentjavascript.net/04_data.html
+https://eloquentjavascript.net/05_higher_order.html - Exercises: "Everything"
 
