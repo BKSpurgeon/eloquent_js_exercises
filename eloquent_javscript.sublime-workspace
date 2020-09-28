@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"array",
-				"arrayList"
+				"for",
+				"for\tfor (…) {…} (Improved Native For-Loop)"
 			],
 			[
-				"for",
-				"for\tfor (…) {…}"
+				"array",
+				"arrayList"
 			],
 			[
 				"ret",
@@ -152,22 +152,31 @@
 	"buffers":
 	[
 		{
-			"file": "higher_order_functions/flatten.test.js",
+			"file": "higher_order_functions/every.test.js",
 			"settings":
 			{
-				"buffer_size": 146,
+				"buffer_size": 622,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "const flatten = function(arrayList){\t\n\n\tfor (var i = 0; i < Things.length; i++) {\n\t\tThings[i]\n\t}\n\n\t\n\treturn reduce(arrayList,  (a, b) => a.concat(b));\t\n}\n\n\nmodule.exports = flatten",
-			"file": "higher_order_functions/flatten.js",
-			"file_size": 118,
-			"file_write_time": 132454720327360970,
+			"file": "higher_order_functions/some.test.js",
 			"settings":
 			{
-				"buffer_size": 180,
+				"buffer_size": 644,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "const some = function(array, predicate){\n\n\tfor (var i = array.length - 1; i >= 0; i--) {\n\t\tif (predicate(i) == true){\n\t\t\treturn true;\n\t\t}\n\t}\n\n\treturn false;\n}\n\n\n\n\nmodule.exports = some",
+			"file": "higher_order_functions/some.js",
+			"file_size": 182,
+			"file_write_time": 132454874034077968,
+			"settings":
+			{
+				"buffer_size": 184,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -222,12 +231,16 @@
 	"expanded_folders":
 	[
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises",
-		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/functions",
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/higher_order_functions"
 	],
 	"file_history":
 	[
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/higher_order_functions/every.js",
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/higher_order_functions/loop.test.js",
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/higher_order_functions/loop.js",
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/readme.md",
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/higher_order_functions/flatten.test.js",
+		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/higher_order_functions/flatten.js",
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/data_structures/range.js",
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/data_structures/range.test.js",
 		"/home/koshy/Documents/js/eloquent_javascript/data_structures/range.test.js",
@@ -255,7 +268,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
@@ -269,6 +282,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"every",
+			"flatten",
+			"loop",
+			"mockBody",
+			"loop",
+			"flatten",
+			"loop.test.js",
 			"returningArray",
 			"countBs",
 			"numberOfBs",
@@ -369,19 +389,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "higher_order_functions/flatten.test.js",
+					"file": "higher_order_functions/every.test.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 146,
+						"buffer_size": 622,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								84,
-								84
+								622,
+								622
 							]
 						],
 						"settings":
@@ -395,24 +415,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "higher_order_functions/flatten.js",
+					"file": "higher_order_functions/some.test.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 180,
+						"buffer_size": 644,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								180,
-								180
+								131,
+								131
 							]
 						],
 						"settings":
@@ -428,13 +448,44 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "higher_order_functions/some.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"keep_blank_lines": null,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": null,
+							"translate_tabs_to_spaces": null
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 35.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -483,7 +534,7 @@
 	"project": "eloquent_javscript.sublime-project",
 	"replace":
 	{
-		"height": 66.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -492,6 +543,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"readme",
+				"readme.md"
+			]
 		],
 		"width": 0.0
 	},
@@ -504,6 +559,10 @@
 			[
 				"pro",
 				"~/Documents/www/BensRails/pro-connect-documentation/pro-connct.sublime-project"
+			],
+			[
+				"blog",
+				"~/Documents/www/public_blog/blog.sublime-project"
 			],
 			[
 				"",
