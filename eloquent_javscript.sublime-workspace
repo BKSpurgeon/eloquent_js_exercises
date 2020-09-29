@@ -151,6 +151,8 @@
 	},
 	"buffers":
 	[
+<<<<<<< HEAD
+=======
 		{
 			"file": "higher_order_functions/every.test.js",
 			"settings":
@@ -181,6 +183,7 @@
 				"line_ending": "Unix"
 			}
 		}
+>>>>>>> origin/master
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -230,6 +233,19 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< HEAD
+		"/home/koshy/Documents/js/eloquent_javascript",
+		"/home/koshy/Documents/js/eloquent_javascript/data_structures"
+	],
+	"file_history":
+	[
+		"/home/koshy/Documents/projects/personal-blog/_layouts/post.html",
+		"/home/koshy/Documents/projects/personal_blog/_config.yml",
+		"/home/koshy/Documents/js/eloquent_javascript/data_structures/reverse.js",
+		"/home/koshy/Documents/projects/personal_blog/_posts/2020-08-06-strange-experiences.md",
+		"/home/koshy/Documents/projects/personal-blog/_config.yml",
+		"/home/koshy/Documents/js/eloquent_javascript/readme.md",
+=======
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises",
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/higher_order_functions"
 	],
@@ -243,7 +259,9 @@
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/higher_order_functions/flatten.js",
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/data_structures/range.js",
 		"/home/koshy/Documents/coding/javascript/eloquent_js_exercises/data_structures/range.test.js",
+>>>>>>> origin/master
 		"/home/koshy/Documents/js/eloquent_javascript/data_structures/range.test.js",
+		"/home/koshy/Documents/js/eloquent_javascript/data_structures/range.js",
 		"/home/koshy/Documents/js/eloquent_javascript/data_structures/package.json",
 		"/home/koshy/Documents/js/eloquent_javascript/data_structures/.gitignore",
 		"/home/koshy/Documents/js/eloquent_javascript/data_structures/practice.js",
@@ -384,9 +402,10 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
+<<<<<<< HEAD
+=======
 				{
 					"buffer": 0,
 					"file": "higher_order_functions/every.test.js",
@@ -480,6 +499,7 @@
 					"stack_index": 1,
 					"type": "text"
 				}
+>>>>>>> origin/master
 			]
 		}
 	],
