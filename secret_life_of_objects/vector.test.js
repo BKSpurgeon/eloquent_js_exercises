@@ -20,7 +20,7 @@ test('vector minus method', () => {
 
 test('length property added as a prototype', () => {
   v = new Vector(3,4);   
-  expect(v.length()).toBe(5)  
+  expect(v.length).toBe(5)  
 });
 
 

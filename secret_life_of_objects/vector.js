@@ -27,21 +27,11 @@ class Vector{
   minus(vector){
     return new Vector(this.x - vector.x, this.y - vector.y)
   }
+
+  get length() {
+    return Math.sqrt(( Math.pow(this.x,2) + (Math.pow(this.y, 2))));
+  }
 }
-
-Vector.prototype["length"] = function(){  
-  return Math.sqrt(( Math.pow(this.x,2) + (Math.pow(this.y, 2))));
-}
-
-
-/*
-Vector.prototype["length"] = {  
-  get length() {Math.sqrt(( Math.pow(this.x,2) + (Math.pow(this.y, 2))));}
-}
-
-*/
-
-
 
 
 module.exports = Vector;
