@@ -37,6 +37,30 @@ class Group {
 
 		return g;
 	}
+
+	[Symbol.iterator]() {
+		return new GroupIterator(this);
+	}
 }
 
-module.exports = Group
+
+class GroupIterator{
+	constructor(group){
+		this.group = group;
+		this. i = 0;
+	}
+
+	next(){
+		if (this.i == this.group.array.length) {
+			return {done: true};
+		}
+		else
+		{
+			let result = { done: false, value: this.group.array[this.i]};
+			this.i++;
+			return result;
+		}
+	}
+}
+
+module.exports ={ Group, GroupIterator}

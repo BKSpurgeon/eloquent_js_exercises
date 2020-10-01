@@ -1,4 +1,6 @@
-const Group = require('./group');
+const {Group, GroupIterator} = require('./group');
+
+///import {Group, GroupIterator} from './group';
 
 test('group adds and has a value', () => {
   let g = new Group();
@@ -21,3 +23,15 @@ test('group has a from static method', () => {
   expect(g.has(10)).toBe(true);  
   expect(g.has(30)).toBe(false);
 });
+
+
+test('group iterator', () => {
+  let g = new Group();  
+  expect(g[Symbol.iterator]()).toEqual(new GroupIterator(g));    
+});
+
+test('group iterator', () => {
+  let g = Group.from([10,20]);  
+  expect(g[Symbol.iterator]()).not.toEqual(new GroupIterator(new Group()));    
+});
+
