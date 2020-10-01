@@ -16,5 +16,5 @@ I prefer to learn things and code via tests. I've used [Jest](https://jestjs.io/
 
 ## Current Bookmark
 
-https://eloquentjavascript.net/05_higher_order.html - Exercises: "Everything"
+https://eloquentjavascript.net/07_robot.html
 
