@@ -45,6 +45,39 @@ class Village{
 		}
 		else
 		{
+			// [{place: "Post Office", address: "Alice's House"}]
+
+			// Step 1
+			//   Current place: at the library
+			//   Destination: the pool
+			//   Result: no parcels picked up or dropped off
+
+
+			// Step 2
+			//    Current place: the pool
+			//    Destination: the post office.
+			//    Result: no parcels picked up or dropped off
+
+
+			// Step 3
+			//    Current place: the post office
+			//    Next desination: bob's garden
+			//    Result: change the current location parcel's where: parcel's current place === this.place to the new destination
+			//    Remove: Any parcels where the address matches the current place.
+
+
+			let new_parcels  =  this.parcels.map(p => {
+				if (p.place === this.place) 
+				{ 
+					return {place: destination, address: p.address}
+				}
+				else
+				{
+					return p
+				}
+			}).filter(p => p.address != this.place)
+
+			return new Village(destination, new_parcels);
 			
 		}
 	}

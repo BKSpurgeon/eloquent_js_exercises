@@ -12,3 +12,10 @@ test("Village class", () => {
 
   expect(old_village.move("Alice's House")).toEqual(old_village)
 })
+
+test("Village class - test the move to the post office", () => {
+  parcels = [{place: "Post Office", address: "Alice's House"}];
+  old_village = new Village("Alice's House", parcels);
+
+  expect(old_village.move("Post Office").place).toEqual("Post Office")
+})
