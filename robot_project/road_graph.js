@@ -29,4 +29,25 @@ function buildGraph(edges){
 
 const roadGraph = buildGraph(roads);
 
-module.exports = roadGraph
+
+class Village{
+	constructor(place, parcels){
+		this.place = place;
+		this.parcels = parcels;
+	}
+
+	move(destination){
+		// if there is no road from the current place to the destination
+		// return the current village instances
+		if (!roadGraph[this.place].includes(destination))
+		{ 
+			return this;
+		}
+		else
+		{
+			
+		}
+	}
+}
+
+module.exports = {roadGraph, Village }

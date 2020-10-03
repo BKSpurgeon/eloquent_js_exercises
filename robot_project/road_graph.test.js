@@ -1,6 +1,4 @@
-const roadGraph = require('./road_graph');
-
-const Village = require('./village');
+const {roadGraph, Village } = require('./road_graph');
 
 test("gets all destinations to alice's house", () => {
   alices_destinations = ["Bob's House", "Cabin", "Post Office"]
