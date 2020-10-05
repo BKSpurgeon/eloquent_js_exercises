@@ -20,3 +20,5 @@ map.__proto__.hasOwnProperty.call(map, "one")
 // the answer suggests an alternate approach
 
 Object.prototype.hasOwnProperty.call(map, "one")
+
+// here's how you can add things to a class.
