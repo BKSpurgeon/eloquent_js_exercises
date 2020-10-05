@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "jest": "^26.4.2"
+    "jest": "26.5.0"
   },
   "name": "robot_project",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-   "scripts": {
+  "scripts": {
     "test": "jest"
   }
 }
