@@ -18,3 +18,9 @@ I prefer to learn things and code via tests. I've used [Jest](https://jestjs.io/
 
 https://eloquentjavascript.net/07_robot.html
 
+
+## Skipped Exercises and Chapters
+
+* I have skipped the Regex Chapter - seeing I'm fairly familiar with the basic concepts.
+
+* In the Robot chapter, there is an exercise which requires you to write a more efficient robot. 
