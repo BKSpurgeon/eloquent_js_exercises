@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="mountain">
+		</div>
+	</body>
+<script type="text/javascript">
+	const MOUNTAINS = [
+	{name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+	{name: "Everest", height: 8848, place: "Nepal"},
+	{name: "Mount Fuji", height: 3776, place: "Japan"},
+	{name: "Vaalserberg", height: 323, place: "Netherlands"},
+	{name: "Denali", height: 6168, place: "United States"},
+	{name: "Popocatepetl", height: 5465, place: "Mexico"},
+	{name: "Mont Blanc", height: 4808, place: "Italy/France"}
+	];
+	// Your code here
+	let columnNames = Object.keys(MOUNTAINS[0]);
+	let table = document.createElement("table");
+	let columnHeadings = document.createElement("tr");
+	
+	for (let name of columnNames) {
+	let thElement = document.createElement("th");
+	let thText = document.createTextNode(name);
+	thElement.appendChild(thText);
+	columnHeadings.appendChild(thElement);
+	}
+	table.appendChild(columnHeadings);
+	
+	MOUNTAINS.forEach((mountain) => {
+		
+		let row = document.createElement("tr");
+		
+		let tdInfo = document.createElement("td");
+		let tdInfoText = document.createTextNode(mountain.name);
+		tdInfo.appendChild(tdInfoText);
+		
+		row.appendChild(tdInfo);
+		
+		let tdHeight = document.createElement("td");
+		let tdHeightText = document.createTextNode(mountain.height);
+		tdHeight.appendChild(tdHeightText);
+		
+		row.appendChild(tdHeight);
+		
+		let tdPlace = document.createElement("td");
+		let tdPlaceText = document.createTextNode(mountain.place);
+		tdPlace.appendChild(tdPlaceText);
+		
+		row.appendChild(tdPlace);
+		
+		table.appendChild(row);
+	})
+	
+	let mountainDiv = document.getElementById("mountain");
+	
+	mountainDiv.appendChild(table);
+</script>
+</html>
