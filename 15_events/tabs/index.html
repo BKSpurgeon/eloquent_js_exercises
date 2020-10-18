@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title></title>
+		<style type="text/css">
+		.trail { /* className for the trail elements */
+			position: absolute;
+			height: 6px; width: 6px;
+			border-radius: 3px;
+			background: teal;
+		}
+		body {
+			height: 300px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="buttons">  </div>
+		<tab-panel>
+		<div data-tabname="one">Tab one</div>
+		<div data-tabname="two">Tab two</div>
+		<div data-tabname="three">Tab three</div>
+		</tab-panel>
+	</body>
+	<script type="text/javascript">
+				function asTabs(node) {
+			let children = Array.from(node.children).map(child => {
+				let button = document.createElement("button");
+				button.textContent = child.getAttribute("data-tabname");
+				let tab = {child, button};
+				
+				button.addEventListener("click", ()=>{
+					selectTab(tab);
+				});
+				
+				
+				let buttonDiv = document.getElementById("buttons");
+				buttonDiv.prepend(button);
+				return tab;
+			});
+			
+			function selectTab(selectedTab){
+					for(let tab of children){
+						let selected = tab == selectedTab;
+						tab.child.style.display = selected ? "" : "none";
+						tab.button.style.color = selected ? "red" : "";
+				}
+						}
+	}
+	
+	asTabs(document.querySelector("tab-panel"));
+	</script>
+</html>
