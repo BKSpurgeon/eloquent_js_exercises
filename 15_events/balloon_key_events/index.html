@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="picture">
+			🎈
+		</div>
+	</body>
+	<script type="text/javascript">
+		let picture = document.getElementById("picture");
+		picture.style.fontSize = "20px";
+		
+		window.addEventListener("keyup", resizeArrows)
+		
+		function explodeBalloon(){
+			picture.textContent = "💥";
+			window.removeEventListener("keyup", resizeArrows);
+			console.log("Game over buddy!");
+		}
+		function resizeArrows(event){
+			if (event.key =="ArrowUp"){
+				picture.style.fontSize =  (parseFloat(picture.style.fontSize) * 1.1).toString() + "px";
+			}
+			else if(event.key =="ArrowDown"){
+				picture.style.fontSize =  (parseFloat(picture.style.fontSize) * 0.9).toString() + "px";
+			}
+			console.log(picture.style.fontSize);
+			if (parseFloat(picture.style.fontSize) > 45){
+				explodeBalloon();
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title></title>
+		<style type="text/css">
+		.trail { /* className for the trail elements */
+			position: absolute;
+			height: 6px; width: 6px;
+			border-radius: 3px;
+			background: teal;
+		}
+		body {
+			height: 300px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="trail"></div>
+		<div class="trail"></div>
+		<div class="trail"></div>
+		<div class="trail"></div>
+		<div class="trail"></div>
+	</body>
+	<script type="text/javascript">
+		let trailers =  document.querySelector("div.trail");
+		// when the mouse moves.
+		// every 50 miliseconds, wherever the mouse is:
+		// we update the position of the last trailer.
+		window.addEventListener("mouseMove", event => {
+			setTimeOut(()=>{
+				let lastItem = trailers.pop();
+				let x =  event.offsetX;
+				let y = event.offsetY;
+			}, 250)
+		} )
+	</script>
+</html>
