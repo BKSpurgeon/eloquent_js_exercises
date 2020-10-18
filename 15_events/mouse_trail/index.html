@@ -23,16 +23,23 @@
 		<div class="trail"></div>
 	</body>
 	<script type="text/javascript">
-		let trailers =  document.querySelector("div.trail");
-		// when the mouse moves.
-		// every 50 miliseconds, wherever the mouse is:
-		// we update the position of the last trailer.
-		window.addEventListener("mouseMove", event => {
-			setTimeOut(()=>{
-				let lastItem = trailers.pop();
-				let x =  event.offsetX;
-				let y = event.offsetY;
-			}, 250)
-		} )
+		let trailers =  Array.from( document.querySelectorAll("div.trail"));
+		
+		let scheduled = null;
+		window.addEventListener("mousemove", event => {
+			if (!scheduled)
+			{
+				setTimeout(() => {
+					let lastItem = trailers.pop();
+					let x =  scheduled.clientX;
+					let y = scheduled.clientY;
+					lastItem.style.left = x + "px";
+					lastItem.style.top = y  +"px";
+					trailers.unshift(lastItem);
+					scheduled = null;
+				}, 50)
+			}
+			scheduled = event;
+		})
 	</script>
 </html>
